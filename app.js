@@ -22,11 +22,6 @@ app.use(express.json());
 
 app.use(routes);
 
-app.post('/crear', async (req, res) => {
-    console.log( req);
-    res.send("recibido");
-   
-   });
 
 server.listen(config.settings.PORT, () => {
     console.log(`Running server in port ${config.settings.PORT}`);
